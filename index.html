@@ -40,13 +40,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 /* Set a style for the submit button */
 .btn {
-  background-color: rgb(44, 224, 113);
+  background-color: rgb(11, 170, 130);
   color: white;
   padding: 15px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 30%;
   opacity: 0.9;
+  font-weight: 400;
+  border-radius: 2px 2px 2px 2px;
 }
 
 .btn:hover {
@@ -54,6 +56,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 }
 hr{
     margin-bottom: 30px;
+    width: 86%;
+    float: left;
 }
 </style>
 </head>
@@ -82,9 +86,13 @@ hr{
     <i class="fa fa-lock icon"></i>
     <input class="input-field" type="password" placeholder="Confirm Password" name="psw">
   </div>
-
-  <button type="submit" class="btn">Register</button>
+  <div style="margin-bottom: 20px;">
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <small><strong><label for="vehicle1"> I accept the <span style="color:rgb(11, 170, 130)">Terms of Use</span> & <span style="color:rgb(11, 170, 130)">Privacy Policy</span> </label><br></strong></small>
+</div>
+  <button type="submit" class="btn" style="font-size:medium;"><strong>Sign Up</strong></button>
 </form>
 
 </body>
 </html>
+
